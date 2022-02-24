@@ -12,115 +12,103 @@ tags:
   - career
 author: thiagorossener
 ---
+<html>
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["timeline"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+    
+        var container = document.getElementById('example5.1');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+        dataTable.addColumn({ type: 'string', id: 'Room' });
+        dataTable.addColumn({ type: 'string', id: 'Name' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+          [ 'HTML_Ban', 'Part1',       new Date(0,0,0,0,0,0),  new Date(0,0,0,0,1,9) ],
+          [ 'HTML_Ban', 'Part_End',    new Date(0,0,0,0,7,17),  new Date(0,0,0,0,7,18) ],
+          [ 'Design_Koba', 'Part1',       new Date(0,0,0,0,0,0),  new Date(0,0,0,0,0,25) ],
+          [ 'Design_Koba', 'Part2',       new Date(0,0,0,0,4,44),  new Date(0,0,0,0,4,53) ],
+          [ 'Design_Koba', 'Part_End',    new Date(0,0,0,0,5,43),  new Date(0,0,0,0,5,48) ],
+          ]);
+    
+        var options = {
+          timeline: { colorByRowLabel: true }
+        };
+    
+        chart.draw(dataTable, options);
+      }
+    
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["timeline"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+      
+          var container = document.getElementById('example4.1');
+          var chart = new google.visualization.Timeline(container);
+          var dataTable = new google.visualization.DataTable();
+          dataTable.addColumn({ type: 'string', id: 'Room' });
+          dataTable.addColumn({ type: 'string', id: 'Name' });
+          dataTable.addColumn({ type: 'date', id: 'Start' });
+          dataTable.addColumn({ type: 'date', id: 'End' });
+          dataTable.addRows([
+            [ 'Koo Kyo-hwan', 'Peninsula',    new Date(2020,7,15,0,0,0),  new Date(2021,7,23,0,0,0) ],
+            [ 'Koo Kyo-hwan', 'Kingdom: Ashin of the North',    new Date(2021,7,23,0,0,0),  new Date(2021,7,28,0,0,0) ],
+            [ 'Koo Kyo-hwan', 'Escape from Mogadishu',    new Date(2021,7,28,0,0,0),  new Date(2021,8,27,0,0,0) ],
+            [ 'Koo Kyo-hwan', 'D.P.',    new Date(2021,8,27,0,0,0),  new Date(2022,2,22,0,0,0) ],
+            [ 'Yoo Ah-in', 'Default',    new Date(2018,11,28,0,0,0),  new Date(2021,6,24,0,0,0) ],
+            [ 'Yoo Ah-in', '#Alive',    new Date(2021,6,24,0,0,0),  new Date(2021,10,15,0,0,0) ],
+            [ 'Yoo Ah-in', 'Voice of Silence',    new Date(2021,10,15,0,0,0),  new Date(2021,11,19,0,0,0) ],
+            [ 'Yoo Ah-in', 'Hellbound',    new Date(2021,11,19,0,0,0),  new Date(2022,2,22,0,0,0) ],
+            [ 'Oppadu', 'Part_1',    new Date(2020,3,18,0,0,0),  new Date(2020,4,1,0,0,0) ],
+            [ 'Oppadu', 'Part_2',    new Date(2020,6,24,0,0,0),  new Date(2020,6,29,0,0,0) ],
+            [ 'Oppadu', 'Part_Now',    new Date(2022,2,17,0,0,0),  new Date(2022,2,18,0,0,0) ]
+            ]);
+      
+          var options = {
+            timeline: { colorByRowLabel: true }
+          };
+      
+          chart.draw(dataTable, options);
+        }
+      
+      </script>
+          <script type="text/javascript">
+            google.charts.load("current", {packages:["timeline"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+          
+              var container = document.getElementById('example3.1');
+              var chart = new google.visualization.Timeline(container);
+              var dataTable = new google.visualization.DataTable();
+              dataTable.addColumn({ type: 'string', id: 'Room' });
+              dataTable.addColumn({ type: 'string', id: 'Name' });
+              dataTable.addColumn({ type: 'date', id: 'Start' });
+              dataTable.addColumn({ type: 'date', id: 'End' });
+              dataTable.addRows([
+                [ 'Korea', 'Jeong Do-jeon&Six Flying Dragons',       new Date(1374,12,0,0,0,0),  new Date(1398,8,0,0,0,24) ],
+                [ 'Korea', 'The Fortress',       new Date(1637,1,3,0,0,0),  new Date(1637,2,24,0,0,24) ],
+                [ 'Korea', '1987',       new Date(1987,1,14,0,0,0),  new Date(1987,7,5,0,0,0) ],
+                [ 'Korea', 'Default',       new Date(1997,1,23,0,0,0),  new Date(1997,12,6,0,0,0) ],
+                [ 'Korea', 'Present',    new Date(2022,1,0,0,0,0),  new Date(2022,2,0,0,0,0) ],
+                ]);
+          
+              var options = {
+                timeline: { colorByRowLabel: true }
+              };
+          
+              chart.draw(dataTable, options);
+            }
+          
+          </script>
+    
+    <div id="example4.1" ></div>
+    <div id="example5.1" ></div>
+    <div id="example3.1"></div>
+</html>
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
