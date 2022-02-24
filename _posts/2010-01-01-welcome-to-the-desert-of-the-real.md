@@ -2,7 +2,7 @@
 date: 23-02
 layout: post
 title: 인천산업정보학교
-subtitle: '인천 유일의 시교육청 산하<br>직업교육위탁기관.'
+subtitle: '인천 유일의 시교육청 산하<br>직업교육위탁기관'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
