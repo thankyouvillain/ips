@@ -1,15 +1,15 @@
 ---
-date: 2019-05-16T23:48:05.000Z
+date: 23-02
 layout: post
-title: Welcome to the desert of the real
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+title: 인천산업정보학교
+subtitle: '인천 유일의 시교육청 산하<br>직업교육위탁기관.'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://drive.google.com/uc?export=view&id=1BiZSqLt9R3X3fxm6SBbc1HZNRZYDDhfI
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://drive.google.com/uc?export=view&id=1BiZSqLt9R3X3fxm6SBbc1HZNRZYDDhfI
 category: blog
 tags:
   - welcome
