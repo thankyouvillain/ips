@@ -1,19 +1,6 @@
----
-date: 2010-09-10 12:26:40
-layout: post
-title: Bookmark
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559825145/theme16_o0seet.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825145/theme16_o0seet.jpg
-category: life
-tags:
-  - life
-  - tips
-author: thiagorossener
----
+<html>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script type="text/javascript">
       google.charts.load("current", {packages:["timeline"]});
@@ -109,3 +96,4 @@ author: thiagorossener
     <div id="example4.1" ></div>
     <div id="example5.1" ></div>
     <div id="example3.1"></div>
+</html>
