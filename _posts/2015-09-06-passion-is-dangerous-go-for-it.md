@@ -111,4 +111,133 @@ author: thiagorossener
     <div id="example5.1" ></div>
     <div id="example3.1"></div>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 0; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size:4vw;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1px;
+}
+
+th {
+  background-color: #041a4f;
+  cursor: pointer;
+  color: white;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+th:hover {
+    background-color:#04AA6D;
+    color: white;    
+
+  }
+
+td{
+    border: 2px solid #000000;
+  }
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+tr:hover {
+    background-color:#04AA6D;
+    color: white;      
+}
+</style>
+</head>
+<body>
+
+<p>Sports</p>
+<input id="myInput" type="text" placeholder="Search">
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th onclick="sortTable(0)">* <i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(1)">Image <i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(2)">Exercise<br><i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(3)">Special<i class="fa fa-sort"></i></th>
+  </tr>
+  </thead>
+  <tbody id = "myTable">
+        <tr>
+            <td>T1</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/T1_logo.svg/1920px-T1_logo.svg.png" width="20%"></td>
+            <td>91</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>South Korea national football</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/f/f8/South_Korea_national_football_team.png" width="20%"></td>
+            <td>21</td>
+            <td></td>
+        </tr>
+
+    </tbody>
+  </table>
+
+</body>
+</html>
 
