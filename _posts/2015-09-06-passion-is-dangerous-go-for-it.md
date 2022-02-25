@@ -1,8 +1,8 @@
 ---
 date: 2015-09-06 12:00:00
 layout: post
-title: Passion is dangerous, go for it!
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+title: Thankschool728
+subtitle: Thankschool728's Space
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png
 optimized_image: https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png
