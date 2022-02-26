@@ -14,114 +14,191 @@ tags:
 author: thiagorossener
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+<html>
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load("current", {packages:["timeline"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+          
+              var container = document.getElementById('example3.1');
+              var chart = new google.visualization.Timeline(container);
+              var dataTable = new google.visualization.DataTable();
+              dataTable.addColumn({ type: 'string', id: 'Room' });
+              dataTable.addColumn({ type: 'string', id: 'Name' });
+              dataTable.addColumn({ type: 'date', id: 'Start' });
+              dataTable.addColumn({ type: 'date', id: 'End' });
+              dataTable.addRows([
+                [ 'Korea', 'Jeong Do-jeon&Six Flying Dragons',       new Date(1374,12,0,0,0,0),  new Date(1398,8,0,0,0,24) ],
+                [ 'Korea', 'The Fortress',       new Date(1637,1,3,0,0,0),  new Date(1637,2,24,0,0,24) ],
+                [ 'Korea', '1987',       new Date(1987,1,14,0,0,0),  new Date(1987,7,5,0,0,0) ],
+                [ 'Korea', 'Default',       new Date(1997,1,23,0,0,0),  new Date(1997,12,6,0,0,0) ],
+                [ 'Korea', 'Present',    new Date(2022,1,0,0,0,0),  new Date(2022,2,0,0,0,0) ],
+                ]);
+          
+              var options = {
+                timeline: { colorByRowLabel: true }
+              };
+          
+              chart.draw(dataTable, options);
+            }
+          
+          </script>
+    
+    <div id="example4.1" ></div>
+    <div id="example5.1" ></div>
+    <div id="example3.1"></div>
+</html>
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
 
-## Inline HTML elements
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 0; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size:4vw;
+}
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1px;
+}
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+th {
+  background-color: #041a4f;
+  cursor: pointer;
+  color: white;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
 
-Most of these elements are styled by browsers with few modifications on our part.
+th:hover {
+    background-color:#04AA6D;
+    color: white;    
 
-# Heading 1
+  }
 
-## Heading 2
+td{
+    border: 2px solid #000000;
+  }
 
-### Heading 3
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+tr:hover {
+    background-color:#04AA6D;
+    color: white;      
+}
+</style>
+</head>
+<body>
 
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p>Film_History</p>
+<input id="myInput" type="text" placeholder="Search">
+<br><br>
 
 <table>
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
+  <tr>
+    <th onclick="sortTable(0)">Year <i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(1)">Title<i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(2)">Poster<i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(2)">Case<i class="fa fa-sort"></i></th>
+  </tr>
   </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+  <tbody id = "myTable">
+        <tr>
+            <td>2011</td>
+            <td>Asura: The City of Madness</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/e/e5/Asura_The_City_of_Madness_poster.jpeg" width="50%"></td>
+            <td>大庄洞</td>
+        </tr>
+        <tr>
+            <td>1997</td>
+            <td>Default</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/5/55/Sovereign_Default.jpg" width="50%"></td>
+            <td>IMF</td>
+        </tr>
+        <tr>
+            <td>1987</td>
+            <td>1987: When the Day Comes</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/87/1987_When_the_Day_Comes.jpg" width="50%"></td>
+            <td>6·10民主抗爭</td>
+        </tr>
+        <tr>
+            <td>1979</td>
+            <td>The Man Standing Next</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/0/0b/The_Man_Standing_Next_movie_poster%2C_Jan_2020.jpg" width="50%"></td>
+            <td>10.26</td>
+        </tr>
+        <tr>
+            <td>1979</td>
+            <td>The President's Last Bang</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b6/President%27s_Last_Bang_Poster.jpg" width="50%"></td>
+            <td>10.26</td>
+        </tr>
+        <tr>
+            <td>1637</td>
+            <td>The Fortress</td>
+            <td><img src ="https://upload.wikimedia.org/wikipedia/en/0/0d/The_Fortress_-_%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1.jpg" width="50%"></td></td>
+            <td>丙子胡亂</td>
+        </tr>
+    </tbody>
+  </table>
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+</body>
+</html>
