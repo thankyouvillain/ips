@@ -411,39 +411,6 @@ tr:hover {
             <td><img src ="https://upload.wikimedia.org/wikipedia/en/0/0d/The_Fortress_-_%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1.jpg" width="50%"></td></td>
             <td>丙子胡亂</td>
         </tr>
-        <tr>
-            <td>1453</td>
-            <td>11-10</td>
-            <td>The Face Reader</td>
-            <td>世祖</td>
-            <td>端宗</td>
-            <td>癸酉靖難</td>
-        </tr>
-        <tr>
-            <td>1422</td>
-            <td>06-08</td>
-            <td>The King of Tears, Lee Bangwon</td>
-            <td>太宗</td>
-            <td>太宗</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>1422</td>
-            <td>06-08</td>
-            <td>Six Flying Dragons</td>
-            <td>太宗</td>
-            <td>太宗</td>
-            <td>0</td>
-        </tr>
-
-        <tr>
-            <td>1398</td>
-            <td>10-06</td>
-            <td>Jeong Do-jeon</td>
-            <td>太宗</td>
-            <td>鄭道傳</td>
-            <td>0</td>
-        </tr>
     </tbody>
   </table>
 
