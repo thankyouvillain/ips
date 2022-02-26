@@ -32,6 +32,7 @@ author: thiagorossener
               dataTable.addRows([
                 [ 'Korea', 'Jeong Do-jeon&Six Flying Dragons',       new Date(1374,12,0,0,0,0),  new Date(1398,8,0,0,0,24) ],
                 [ 'Korea', 'The Fortress',       new Date(1637,1,3,0,0,0),  new Date(1637,2,24,0,0,24) ],
+                [ 'Korea', 'The Man Standing Next',       new Date(1979,9,16,0,0,0),  new Date(1979,10,26,0,0,0) ],
                 [ 'Korea', '1987',       new Date(1987,1,14,0,0,0),  new Date(1987,7,5,0,0,0) ],
                 [ 'Korea', 'Default',       new Date(1997,1,23,0,0,0),  new Date(1997,12,6,0,0,0) ],
                 [ 'Korea', 'Present',    new Date(2022,1,0,0,0,0),  new Date(2022,2,0,0,0,0) ],
