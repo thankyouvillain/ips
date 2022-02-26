@@ -78,38 +78,10 @@ author: thiagorossener
         }
       
       </script>
-          <script type="text/javascript">
-            google.charts.load("current", {packages:["timeline"]});
-            google.charts.setOnLoadCallback(drawChart);
-            function drawChart() {
-          
-              var container = document.getElementById('example3.1');
-              var chart = new google.visualization.Timeline(container);
-              var dataTable = new google.visualization.DataTable();
-              dataTable.addColumn({ type: 'string', id: 'Room' });
-              dataTable.addColumn({ type: 'string', id: 'Name' });
-              dataTable.addColumn({ type: 'date', id: 'Start' });
-              dataTable.addColumn({ type: 'date', id: 'End' });
-              dataTable.addRows([
-                [ 'Korea', 'Jeong Do-jeon&Six Flying Dragons',       new Date(1374,12,0,0,0,0),  new Date(1398,8,0,0,0,24) ],
-                [ 'Korea', 'The Fortress',       new Date(1637,1,3,0,0,0),  new Date(1637,2,24,0,0,24) ],
-                [ 'Korea', '1987',       new Date(1987,1,14,0,0,0),  new Date(1987,7,5,0,0,0) ],
-                [ 'Korea', 'Default',       new Date(1997,1,23,0,0,0),  new Date(1997,12,6,0,0,0) ],
-                [ 'Korea', 'Present',    new Date(2022,1,0,0,0,0),  new Date(2022,2,0,0,0,0) ],
-                ]);
-          
-              var options = {
-                timeline: { colorByRowLabel: true }
-              };
-          
-              chart.draw(dataTable, options);
-            }
-          
-          </script>
     
     <div id="example4.1" ></div>
     <div id="example5.1" ></div>
-    <div id="example3.1"></div>
+  
 </html>
 <html>
 <head>
