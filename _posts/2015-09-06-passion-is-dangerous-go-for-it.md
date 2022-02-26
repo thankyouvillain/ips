@@ -221,33 +221,40 @@ tr:hover {
   </tr>
   </thead>
   <tbody id = "myTable">
+       
+        <tr>
+            <td>NFL</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/800px-National_Football_League_logo.svg.png" width="30%"></td>
+            <td>131</td>
+            <td></td>
+            </tr>
         <tr>
             <td>T1</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/T1_logo.svg/1920px-T1_logo.svg.png" width="20%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/T1_logo.svg/1920px-T1_logo.svg.png" width="30%"></td>
             <td>91</td>
             <td></td>
         </tr>
         <tr>
             <td>Incheon United</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Emblem_of_Incheon_United.svg/800px-Emblem_of_Incheon_United.svg.png" width="20%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Emblem_of_Incheon_United.svg/800px-Emblem_of_Incheon_United.svg.png" width="30%"></td>
             <td>58</td>
             <td></td>
         </tr>
         <tr>
             <td>Faker</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/e6/Faker_at_the_2015.10.02_S5_Paris_day2.jpeg" width="20%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/e6/Faker_at_the_2015.10.02_S5_Paris_day2.jpeg" width="30%"></td>
             <td>42</td>
             <td></td>
         </tr>
         <tr>
             <td>Cincinnati Bengals</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Cincinnati_Bengals_logo.svg/1280px-Cincinnati_Bengals_logo.svg.png" width="20%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Cincinnati_Bengals_logo.svg/1280px-Cincinnati_Bengals_logo.svg.png" width="30%"></td>
             <td>30</td>
             <td></td>
         </tr>
         <tr>
             <td>South Korea national football</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/f/f8/South_Korea_national_football_team.png" width="20%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/f/f8/South_Korea_national_football_team.png" width="30%"></td>
             <td>21</td>
             <td></td>
         </tr>
