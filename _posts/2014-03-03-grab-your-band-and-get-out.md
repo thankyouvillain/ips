@@ -1,11 +1,11 @@
 ---
 date: 2017-05-11 12:00:00
 layout: post
-title: Grab your band and get out
+title: Film_History
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559824822/theme15_oqsl4z.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824822/theme15_oqsl4z.jpg
+image: https://upload.wikimedia.org/wikipedia/en/0/0b/The_Man_Standing_Next_movie_poster%2C_Jan_2020.jpg
+optimized_image: https://upload.wikimedia.org/wikipedia/en/0/0b/The_Man_Standing_Next_movie_poster%2C_Jan_2020.jpg
 category: music
 tags:
   - music
@@ -164,37 +164,37 @@ tr:hover {
         <tr>
             <td>2011</td>
             <td>Asura: The City of Madness</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/e/e5/Asura_The_City_of_Madness_poster.jpeg" width="50%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/e/e5/Asura_The_City_of_Madness_poster.jpeg" width="60%"></td>
             <td>大庄洞</td>
         </tr>
         <tr>
             <td>1997</td>
             <td>Default</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/5/55/Sovereign_Default.jpg" width="50%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/5/55/Sovereign_Default.jpg" width="60%"></td>
             <td>IMF</td>
         </tr>
         <tr>
             <td>1987</td>
             <td>1987: When the Day Comes</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/87/1987_When_the_Day_Comes.jpg" width="50%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/87/1987_When_the_Day_Comes.jpg" width="60%"></td>
             <td>6·10民主抗爭</td>
         </tr>
         <tr>
             <td>1979</td>
             <td>The Man Standing Next</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/0/0b/The_Man_Standing_Next_movie_poster%2C_Jan_2020.jpg" width="50%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/0/0b/The_Man_Standing_Next_movie_poster%2C_Jan_2020.jpg" width="60%"></td>
             <td>10.26</td>
         </tr>
         <tr>
             <td>1979</td>
             <td>The President's Last Bang</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b6/President%27s_Last_Bang_Poster.jpg" width="50%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b6/President%27s_Last_Bang_Poster.jpg" width="60%"></td>
             <td>10.26</td>
         </tr>
         <tr>
             <td>1637</td>
             <td>The Fortress</td>
-            <td><img src ="https://upload.wikimedia.org/wikipedia/en/0/0d/The_Fortress_-_%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1.jpg" width="50%"></td></td>
+            <td><img src ="https://upload.wikimedia.org/wikipedia/en/0/0d/The_Fortress_-_%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1.jpg" width="60%"></td></td>
             <td>丙子胡亂</td>
         </tr>
     </tbody>
