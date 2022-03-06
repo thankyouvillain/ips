@@ -236,6 +236,12 @@ tr:hover {
             <td>21</td>
             <td></td>
         </tr>
+         <tr>
+            <td>Jeonbuk Hyundai Motors</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Jeonbuk_Hyundai_Motors.svg/1024px-Jeonbuk_Hyundai_Motors.svg.png" width="30%"></td>
+            <td>6</td>
+            <td>Anti</td>
+        </tr>
 
     </tbody>
   </table>
