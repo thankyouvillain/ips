@@ -243,6 +243,12 @@ tr:hover {
             <td></td>
         </tr>
         <tr>
+            <td>Francis Ngannou</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/ea/Francis_Ngannou_photo.jpg" width="30%"></td>
+            <td>17</td>
+            <td></td>
+        </tr>
+        <tr>
             <td>North London derby</td>
             <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Spurs_vs_Arsenal%2C_Avril_2007.jpg/375px-Spurs_vs_Arsenal%2C_Avril_2007.jpg" width="30%"></td>
             <td>15</td>
