@@ -255,6 +255,12 @@ tr:hover {
             <td>6</td>
             <td>Anti</td>
         </tr>
+        <tr>
+            <td>ASL</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Afreeca_ASL_logo.jpg" width="30%"></td>
+            <td>5</td>
+            <td></td>
+        </tr>
 
     </tbody>
   </table>
