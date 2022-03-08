@@ -254,6 +254,12 @@ tr:hover {
             <td>15</td>
             <td>Derby</td>
         </tr>
+        <tr>
+            <td>Jaedong</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/8/86/Hwaseung_Jaedong.JPG" width="30%"></td>
+            <td>7</td>
+            <td></td>
+        </tr>
 
          <tr>
             <td>Jeonbuk Hyundai Motors</td>
