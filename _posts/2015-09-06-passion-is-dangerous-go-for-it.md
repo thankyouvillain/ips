@@ -254,6 +254,12 @@ tr:hover {
             <td>15</td>
             <td>Derby</td>
         </tr>
+            <tr>
+            <td>ASL</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Afreeca_ASL_logo.jpg" width="30%"></td>
+            <td>12</td>
+            <td></td>
+        </tr>
         <tr>
             <td>Jaedong</td>
             <td><img src = "https://upload.wikimedia.org/wikipedia/commons/8/86/Hwaseung_Jaedong.JPG" width="30%"></td>
@@ -267,12 +273,7 @@ tr:hover {
             <td>6</td>
             <td>Anti</td>
         </tr>
-        <tr>
-            <td>ASL</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Afreeca_ASL_logo.jpg" width="30%"></td>
-            <td>5</td>
-            <td></td>
-        </tr>
+
 
     </tbody>
   </table>
