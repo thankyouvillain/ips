@@ -159,12 +159,47 @@ img {
             <td>1.95</td>
             <td></td>
         </tr>
+         <tr>
+            <td>Inception:<br>The Shooting Scrip</td>
+            <td>English</td>
+            <td><img src="https://images-na.ssl-images-amazon.com/images/I/61cOm8-xzTL._SX328_BO1,204,203,200_.jpg" width = "100%"></td>
+            <td></td>
+            <td>218</td>
+        </tr>
+        <tr>
+            <td>Inside<br>Out</td>
+            <td>English</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg" width = "100%"></td>
+            <td>1.58</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Digital<br>Fortress</td>
+            <td>English</td>
+            <td><img src ="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360095966l/11125.jpg" width = "100%"></td>
+            <td></td>
+            <td>510</td>
+        </tr>
+        <tr>
+            <td>Deception<br>Point</td>
+            <td>English</td>
+            <td><img src ="https://images-eu.ssl-images-amazon.com/images/I/41T7ZrFJefL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" width = "100%"></td>
+            <td></td>
+            <td>556</td>
+        </tr>
+        <tr>
+            <td>Angels&<br>Demons</td>
+            <td>English</td>
+            <td><img src ="https://images-na.ssl-images-amazon.com/images/I/510uIcLWISL._SX327_BO1,204,203,200_.jpg" width = "100%"></td>
+            <td>10</td>
+            <td>736</td>
+        </tr>
         <tr>
             <td>Sum</td>
             <td></td>
             <td></td>
-            <td>8.86</td>
-            <td></td>
+            <td>10.44</td>
+            <td>2020</td>
         </tr>
     </tbody>
   </table>
