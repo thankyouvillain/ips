@@ -205,7 +205,7 @@ img {
             <td>Sum</td>
             <td></td>
             <td></td>
-            <td>10.44</td>
+            <td>12.44</td>
             <td>2020</td>
         </tr>
     </tbody>
