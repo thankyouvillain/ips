@@ -13,114 +13,204 @@ tags:
 author: thiagorossener
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 0; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size:4vw;
+}
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1px;
+}
 
-## Inline HTML elements
+th {
+  background-color: #041a4f;
+  cursor: pointer;
+  color: white;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+th:hover {
+    background-color:#04AA6D;
+    color: white;    
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+  }
 
-Most of these elements are styled by browsers with few modifications on our part.
+td{
+    border: 2px solid #000000;
+  }
 
-# Heading 1
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+tr:hover {
+    background-color:#04AA6D;
+    color: white;      
+}
+  
+img {
+  border-radius: 95%;
+}
+</style>
+</head>
+<body>
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p>Sports</p>
+<input id="myInput" type="text" placeholder="Search">
+<br><br>
 
 <table>
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
+  <tr>
+    <th onclick="sortTable(0)">* <i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(1)">Image <i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(2)">Language<br><i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(3)">Hour<i class="fa fa-sort"></i></th>
+  </tr>
   </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+  <tbody id = "myTable">
+       
+        <tr>
+            <td>Dune</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="30%"></td>
+            <td>English</td>
+            <td>2.60</td>
+            </tr>
+        <tr>
+            <td>T1</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/T1_logo.svg/1920px-T1_logo.svg.png" width="30%"></td>
+            <td>91</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Incheon United</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Emblem_of_Incheon_United.svg/800px-Emblem_of_Incheon_United.svg.png" width="30%"></td>
+            <td>58</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faker</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/e6/Faker_at_the_2015.10.02_S5_Paris_day2.jpeg" width="30%"></td>
+            <td>42</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Worlds</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/LOL_Worlds_logo.svg/1024px-LOL_Worlds_logo.svg.png" width="30%"></td>
+            <td>31</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cincinnati Bengals</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Cincinnati_Bengals_logo.svg/1280px-Cincinnati_Bengals_logo.svg.png" width="30%"></td>
+            <td>30</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NBA playoffs</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/NBA_Playoffs_logo_%282018%29.svg/1920px-NBA_Playoffs_logo_%282018%29.svg.png" width="30%"></td>
+            <td>28</td>
+            <td>Play Offs</td>
+        </tr>
+        <tr>
+            <td>South Korea national football</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/f/f8/South_Korea_national_football_team.png" width="30%"></td>
+            <td>21</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Francis Ngannou</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/ea/Francis_Ngannou_photo.jpg" width="30%"></td>
+            <td>17</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>North London derby</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Spurs_vs_Arsenal%2C_Avril_2007.jpg/375px-Spurs_vs_Arsenal%2C_Avril_2007.jpg" width="30%"></td>
+            <td>15</td>
+            <td>Derby</td>
+        </tr>
+            <tr>
+            <td>ASL</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Afreeca_ASL_logo.jpg" width="30%"></td>
+            <td>12</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Jaedong</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/8/86/Hwaseung_Jaedong.JPG" width="30%"></td>
+            <td>7</td>
+            <td></td>
+        </tr>
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+         <tr>
+            <td>Jeonbuk Hyundai Motors</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Jeonbuk_Hyundai_Motors.svg/1024px-Jeonbuk_Hyundai_Motors.svg.png" width="30%"></td>
+            <td>6</td>
+            <td>Anti</td>
+        </tr>
+
+
+    </tbody>
+  </table>
+
+</body>
+</html>
