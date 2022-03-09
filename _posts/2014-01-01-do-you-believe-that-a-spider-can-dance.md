@@ -145,75 +145,19 @@ img {
             <td>2.03</td>
             <td></td>
         </tr>
+         <tr>
+            <td>Guardians of the Galaxy Vol. 2</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/a/ab/Guardians_of_the_Galaxy_Vol_2_poster.jpg" width="60%"></td>
+            <td>English</td>
+            <td>2.28</td>
+            <td></td>
+        </tr>   
         <tr>
             <td>Sum</td>
             <td></td>
             <td>4.63</td>
             <td></td>
         </tr>
-        <tr>
-            <td>Faker</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/e6/Faker_at_the_2015.10.02_S5_Paris_day2.jpeg" width="30%"></td>
-            <td>42</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Worlds</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/LOL_Worlds_logo.svg/1024px-LOL_Worlds_logo.svg.png" width="30%"></td>
-            <td>31</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Cincinnati Bengals</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Cincinnati_Bengals_logo.svg/1280px-Cincinnati_Bengals_logo.svg.png" width="30%"></td>
-            <td>30</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>NBA playoffs</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/NBA_Playoffs_logo_%282018%29.svg/1920px-NBA_Playoffs_logo_%282018%29.svg.png" width="30%"></td>
-            <td>28</td>
-            <td>Play Offs</td>
-        </tr>
-        <tr>
-            <td>South Korea national football</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/f/f8/South_Korea_national_football_team.png" width="30%"></td>
-            <td>21</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Francis Ngannou</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/e/ea/Francis_Ngannou_photo.jpg" width="30%"></td>
-            <td>17</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>North London derby</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Spurs_vs_Arsenal%2C_Avril_2007.jpg/375px-Spurs_vs_Arsenal%2C_Avril_2007.jpg" width="30%"></td>
-            <td>15</td>
-            <td>Derby</td>
-        </tr>
-            <tr>
-            <td>ASL</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Afreeca_ASL_logo.jpg" width="30%"></td>
-            <td>12</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Jaedong</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/commons/8/86/Hwaseung_Jaedong.JPG" width="30%"></td>
-            <td>7</td>
-            <td></td>
-        </tr>
-
-         <tr>
-            <td>Jeonbuk Hyundai Motors</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Jeonbuk_Hyundai_Motors.svg/1024px-Jeonbuk_Hyundai_Motors.svg.png" width="30%"></td>
-            <td>6</td>
-            <td>Anti</td>
-        </tr>
-
-
     </tbody>
   </table>
 
