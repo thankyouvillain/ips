@@ -126,6 +126,7 @@ img {
     <th onclick="sortTable(1)">Image <i class="fa fa-sort"></i></th> 
     <th onclick="sortTable(2)">Language<br><i class="fa fa-sort"></i></th>
     <th onclick="sortTable(3)">Hour<i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(3)">Page<i class="fa fa-sort"></i></th>
   </tr>
   </thead>
   <tbody id = "myTable">
@@ -137,9 +138,10 @@ img {
             <td>2.60</td>
             </tr>
         <tr>
-            <td>T1</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/T1_logo.svg/1920px-T1_logo.svg.png" width="30%"></td>
-            <td>91</td>
+            <td>Guardians of the Galaxy</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/3/33/Guardians_of_the_Galaxy_%28film%29_poster.jpg" width="40%"></td>
+            <td>English</td>
+            <td>2.03</td>
             <td></td>
         </tr>
         <tr>
