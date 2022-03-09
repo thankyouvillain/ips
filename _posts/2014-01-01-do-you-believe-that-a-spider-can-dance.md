@@ -195,6 +195,13 @@ img {
             <td>736</td>
         </tr>
         <tr>
+            <td>Okja</td>
+            <td><img src ="https://upload.wikimedia.org/wikipedia/en/f/f6/Okja.png" width = "100%"></td>
+            <td>English</td>
+            <td>2.00</td>
+            <td></td>
+        </tr>
+        <tr>
             <td>Sum</td>
             <td></td>
             <td></td>
