@@ -177,7 +177,8 @@ tr:hover {
 }
   
 img {
-  border-radius: 99%;
+  padding: 10px;
+  border-radius: 25px;
 }
 </style>
 </head>
