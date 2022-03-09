@@ -175,6 +175,10 @@ tr:hover {
     background-color:#04AA6D;
     color: white;      
 }
+  
+img {
+  border-radius: 75%;
+}
 </style>
 </head>
 <body>
@@ -188,17 +192,17 @@ tr:hover {
   <tr>
     <th onclick="sortTable(0)">* <i class="fa fa-sort"></i></th> 
     <th onclick="sortTable(1)">Image <i class="fa fa-sort"></i></th> 
-    <th onclick="sortTable(2)">Exercise<br><i class="fa fa-sort"></i></th>
-    <th onclick="sortTable(3)">Special<i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(2)">Language<br><i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(3)">Hour<i class="fa fa-sort"></i></th>
   </tr>
   </thead>
   <tbody id = "myTable">
        
         <tr>
-            <td>NFL</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/800px-National_Football_League_logo.svg.png" width="30%"></td>
-            <td>131</td>
-            <td></td>
+            <td>Dune</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="30%"></td>
+            <td>English</td>
+            <td>2.60</td>
             </tr>
         <tr>
             <td>T1</td>
