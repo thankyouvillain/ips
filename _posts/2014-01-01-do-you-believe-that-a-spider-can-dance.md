@@ -133,28 +133,28 @@ img {
        
         <tr>
             <td>Dune</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="60%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="100%"></td>
             <td>English</td>
             <td>2.60</td>
             <td></td>
             </tr>
         <tr>
             <td>Guardians of the Galaxy</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/3/33/Guardians_of_the_Galaxy_%28film%29_poster.jpg" width="60%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/3/33/Guardians_of_the_Galaxy_%28film%29_poster.jpg" width="100%"></td>
             <td>English</td>
             <td>2.03</td>
             <td></td>
         </tr>
          <tr>
             <td>Guardians of the Galaxy Vol. 2</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/a/ab/Guardians_of_the_Galaxy_Vol_2_poster.jpg" width="60%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/a/ab/Guardians_of_the_Galaxy_Vol_2_poster.jpg" width="100%"></td>
             <td>English</td>
             <td>2.28</td>
             <td></td>
         </tr>
              <tr>
             <td>Ant-Man</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/1/12/Ant-Man_%28film%29_poster.jpg" width="60%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/1/12/Ant-Man_%28film%29_poster.jpg" width="100%"></td>
             <td>English</td>
             <td>1.95</td>
             <td></td>
