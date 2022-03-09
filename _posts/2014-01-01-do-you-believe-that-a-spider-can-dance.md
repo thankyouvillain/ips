@@ -191,7 +191,7 @@ img {
             <td>Angels&<br>Demons</td>
             <td><img src ="https://images-na.ssl-images-amazon.com/images/I/510uIcLWISL._SX327_BO1,204,203,200_.jpg" width = "100%"></td>
             <td>English</td>
-            <td>10</td>
+            <td></td>
             <td>736</td>
         </tr>
         <tr>
