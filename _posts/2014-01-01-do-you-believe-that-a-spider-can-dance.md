@@ -155,6 +155,7 @@ img {
         <tr>
             <td>Sum</td>
             <td></td>
+            <td></td>
             <td>4.63</td>
             <td></td>
         </tr>
