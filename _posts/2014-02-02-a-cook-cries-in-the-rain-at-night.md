@@ -14,114 +14,252 @@ tags:
 author: thiagorossener
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+ <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 0; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size:4vw;
+}
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1px;
+}
 
-## Inline HTML elements
+th {
+  background-color: #041a4f;
+  cursor: pointer;
+  color: white;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+th:hover {
+    background-color:#04AA6D;
+    color: white;    
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+  }
 
-Most of these elements are styled by browsers with few modifications on our part.
+td{
+    border: 2px solid #000000;
+  }
 
-# Heading 1
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+tr:hover {
+    background-color:#04AA6D;
+    color: white;      
+}
+</style>
+</head>
+<body>
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p>English Subtitle_Book</p>
+<input id="myInput" type="text" placeholder="Search">
+<br><br>
 
 <table>
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
+  <tr>
+    <th onclick="sortTable(0)">Title <i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(1)">Language<i class="fa fa-sort"></i></th> 
+    <th onclick="sortTable(2)">Poster<i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(3)">my<br>rating<i class="fa fa-sort"></i></th>
+    <th onclick="sortTable(3)">#<i class="fa fa-sort"></i></th>
+  </tr>
   </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+  <tbody id = "myTable">
+        <tr>
+            <td>Inception:<br>The Shooting Scrip</td>
+            <td>English</td>
+            <td><img src="https://images-na.ssl-images-amazon.com/images/I/61cOm8-xzTL._SX328_BO1,204,203,200_.jpg" width = "100%"></td>
+            <td>10</td>
+            <td>#Mind</td>
+        </tr>
+        <tr>
+            <td>Inside<br>Out</td>
+            <td>English</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg" width = "100%"></td>
+            <td>10</td>
+            <td>#Mind</td>
+        </tr>
+        <tr>
+            <td>Digital<br>Fortress</td>
+            <td>English</td>
+            <td><img src ="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360095966l/11125.jpg" width = "100%"></td>
+            <td>10</td>
+            <td>#Dan Brown</td>
+        </tr>
+        <tr>
+            <td>Deception<br>Point</td>
+            <td>English</td>
+            <td><img src ="https://images-eu.ssl-images-amazon.com/images/I/41T7ZrFJefL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" width = "100%"></td>
+            <td>10</td>
+            <td>#Dan Brown</td>
+        </tr>
+        <tr>
+            <td>Angels&<br>Demons</td>
+            <td>English</td>
+            <td><img src ="https://images-na.ssl-images-amazon.com/images/I/510uIcLWISL._SX327_BO1,204,203,200_.jpg" width = "100%"></td>
+            <td>10</td>
+            <td>#Dan Brown</td>
+        </tr>
+        <tr>
+            <td>Extracurricular</td>
+            <td>Korean</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Extracurricular_2020.jpg" width="100%"></td>
+            <td>9</td>
+            <td>#School</td>
+        </tr>
+        <tr>
+            <td>Money</td>
+            <td>Korean</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Money_%282019_film%29.jpg" width="100%"></td>
+            <td>6</td>
+            <td>#Economy<br>#Office</td>
+        </tr>
+        <tr>
+            <td>Misaeng:<br>Incomplete<br>Life </td>
+            <td>Korean</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Misaeng-poster.jpg" width="100%"></td>
+            <td>10</td>
+            <td>#Office</td>
+        </tr>
+        <tr>
+            <td>Stove<br>League</td>
+            <td>Korean</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Stove_League_main_poster.jpg" width="100%"></td>
+            <td>10</td>
+            <td>#School</td>
+        </tr>
+        <tr>
+            <td>Master<br>of<br>Study</td>
+            <td>Korean</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/d/d3/LordofStudy.jpg" width="100%"></td>
+            <td>10</td>
+            <td>#Office<br>#Baseball</td>
+        </tr>
+        <tr>
+            <td>Glove</td>
+            <td>Korean</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Glove2011Poster.jpg" width="100%"></td>
+            <td>7</td>
+            <td>#School<br>#Disabled<br>#Baseball</td>
+        </tr>
+        <tr>
+            <td>All of us Are Dead</td>
+            <td>Office</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/2/24/All_of_Us_Are_Dead.jpeg" width="100%"></td>
+            <td>5</td>
+            <td>#School</td>
+        </tr>
+        <tr>
+            <td>Songgot: The Piercery</td>
+            <td>Office</td>
+            <td>9</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Solomon's Perjury</td>
+            <td>School</td>
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Along with the Gods: The Two Worlds</td>
+            <td>沈pearl風</td>
+            <td>7</td>
+            <td>Original</td>
+        </tr>
+        <tr>
+            <td>Along with the Gods: The Last 49 Days</td>
+            <td>沈pearl風</td>
+            <td>6</td>
+            <td>Original</td>
+        </tr>
+        <tr>
+            <td>Squid Game</td>
+            <td>沈pearl風</td>
+            <td>6</td>
+            <td>Review</td>
+        </tr>
+        <tr>
+            <td>Parasite</td>
+            <td>沈pearl風</td>
+            <td>7</td>
+            <td>Review</td>
+        </tr>
+        <tr>
+            <td>Hellbound</td>
+            <td>沈pearl風</td>
+            <td>9</td>
+            <td>Review</td>
+        </tr>
+        <tr>
+            <td>A Hard Day</td>
+            <td>沈pearl風</td>
+            <td>5</td>
+            <td>Review</td>
+        </tr>
+    </tbody>
+  </table>
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+</body>
+</html>
