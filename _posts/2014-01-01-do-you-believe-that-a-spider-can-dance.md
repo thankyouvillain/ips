@@ -151,12 +151,19 @@ img {
             <td>English</td>
             <td>2.28</td>
             <td></td>
-        </tr>   
+        </tr>
+             <tr>
+            <td>Ant-Man</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/1/12/Ant-Man_%28film%29_poster.jpg" width="60%"></td>
+            <td>English</td>
+            <td>1.95</td>
+            <td></td>
+        </tr>
         <tr>
             <td>Sum</td>
             <td></td>
             <td></td>
-            <td>6.91</td>
+            <td>8.86</td>
             <td></td>
         </tr>
     </tbody>
