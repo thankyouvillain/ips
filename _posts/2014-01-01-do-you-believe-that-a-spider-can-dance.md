@@ -107,7 +107,7 @@ tr:hover {
 }
   
 img {
-  border-radius: 95%;
+  border-radius: 99%;
 }
 </style>
 </head>
