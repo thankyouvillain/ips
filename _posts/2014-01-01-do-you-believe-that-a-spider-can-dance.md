@@ -107,7 +107,6 @@ tr:hover {
 }
   
 img {
-  border: 2px solid red;
   padding: 10px;
   border-radius: 20px;
 }
@@ -133,7 +132,7 @@ img {
        
         <tr>
             <td>Dune</td>
-            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="30%"></td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="40%"></td>
             <td>English</td>
             <td>2.60</td>
             </tr>
