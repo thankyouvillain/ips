@@ -136,6 +136,7 @@ img {
             <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" width="40%"></td>
             <td>English</td>
             <td>2.60</td>
+            <td>2.60</td>
             </tr>
         <tr>
             <td>Guardians of the Galaxy</td>
