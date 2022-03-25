@@ -16,6 +16,7 @@
         dataTable.addColumn({ type: 'date', id: 'End' });
         dataTable.addRows([
           [ 'HTML_Ban', 'Part1',       new Date(0,0,0,0,0,0),  new Date(0,0,0,0,1,9) ],
+          [ 'HTML_Ban', 'Part2',       new Date(0,0,0,0,6,1),  new Date(0,0,0,0,6,63) ],
           [ 'HTML_Ban', 'Part_End',    new Date(0,0,0,0,7,17),  new Date(0,0,0,0,7,18) ],
           [ 'Design_Koba', 'Part1',       new Date(0,0,0,0,0,0),  new Date(0,0,0,0,0,25) ],
           [ 'Design_Koba', 'Part2',       new Date(0,0,0,0,4,44),  new Date(0,0,0,0,4,53) ],
