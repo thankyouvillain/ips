@@ -192,7 +192,7 @@ tr:hover {
         <tr>
             <td>The<br>Clubhouse</td>
             <td>Korean</td>
-            <td><img src="https://w.namu.la/s/ded2d9b09494af176e0e7bb82638343c2e41fe32ef101bdd73207c98c927b09e4d5a44a0bad20778497af24c60806f4dc06594d1a4342808d23a5afcd832804d0e9cb9068a35606bb7be60cd07413bccd2db57a828708911479a71734f01588c.jpg" width="100%"></td>
+            <td><img src="https://cdn.newsin.co.kr/news/photo/202203/99709_94308_5914.jpg" width="100%"></td>
             <td>10</td>
             <td>#Office<br>#Baseball</td>
         </tr>
@@ -201,7 +201,7 @@ tr:hover {
             <td>Korean</td>
             <td><img src="https://upload.wikimedia.org/wikipedia/en/d/d3/LordofStudy.jpg" width="100%"></td>
             <td>10</td>
-            <td>#Office<br>#Baseball</td>
+            <td>#Office<br>#School</td>
         </tr>
         <tr>
             <td>Glove</td>
